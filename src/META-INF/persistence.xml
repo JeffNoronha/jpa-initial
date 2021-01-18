@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence  http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+		
+	<persistence-unit name="school" transaction-type="RESOURCE_LOCAL">
+		
+		<class>br.com.jpa.model.Aluno</class>
+		<class>br.com.jpa.model.Curso</class>
+		<class>br.com.jpa.model.Disciplina</class>
+		<class>br.com.jpa.model.Endereco</class>
+		<class>br.com.jpa.model.Instituicao</class>
+		<class>br.com.jpa.model.Professor</class>
+		<class>br.com.jpa.model.Pessoa</class>
+		<class>br.com.jpa.model.Estado</class>
+		<class>br.com.jpa.model.Governador</class>
+		<class>br.com.jpa.model.Departamento</class>
+		<class>br.com.jpa.model.Funcionario</class>
+		<class>br.com.jpa.model.Dependente</class>
+		<class>br.com.jpa.model.Livro</class>
+		<class>br.com.jpa.model.Autor</class>
+		<class>br.com.jpa.model.Projeto</class>
+		<class>br.com.jpa.model.TipoPagamento</class>
+		<class>br.com.jpa.model.PagamentoAvista</class>
+		<class>br.com.jpa.model.PagamentoAprazo</class>
+		<class>br.com.jpa.model.Veiculo</class>
+		<class>br.com.jpa.model.Carro</class>
+		<class>br.com.jpa.model.Moto</class>
+		<class>br.com.jpa.model.Instrumento</class>
+		<class>br.com.jpa.model.Bateria</class>
+		<class>br.com.jpa.model.Guitarra</class>
+		<class>br.com.jpa.model.Postagem</class>
+		<class>br.com.jpa.model.Topico</class>
+		<class>br.com.jpa.model.PostagemAvaliacao</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/school?useSSL=false" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="root" />
+			
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+			<property name="eclipselink.logging.level.sql" value="FINE"/>
+			<property name="eclipselink.logging.parameters" value="true"/>
+		</properties>
+	</persistence-unit>
+	
+</persistence>
